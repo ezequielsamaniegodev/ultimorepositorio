@@ -1,0 +1,131 @@
+.navegador-boostrap-habitaciones{
+    display: none;
+}
+body{
+    background-color: rgb(248, 248, 248);
+}
+.img-principal{
+    img{
+        width: 100%;
+        height: 80vh;
+    }
+}
+.rooms-title{
+    width: 100%;
+    height: 15.625rem;
+    @include flex(row,none,center,center);
+    position: relative;
+    bottom: 100px;
+    div{
+        width: 70%;
+        gap: .625rem;
+        padding: .9375rem;
+        background-color: rgb(255, 255, 255);
+        @include flex(column,none,center,center);
+        background-color: white;
+        box-shadow: 3px 3px 10px black;
+        h2{
+            font-family: 'Quicksand', sans-serif ;
+            font-size: 1.875rem;
+            color: black;
+            font-weight: 900;
+        }
+        p{
+            font-family:'Roboto', sans-serif;
+            font-size: 1.25rem;
+            color: black;
+            font-weight: 400;
+        }
+    }
+}
+.grid-cards{
+    gap: 2.5rem;
+    padding: 40px;
+    @include grid (repeat(3, 1fr),repeat(3, 1fr),none, none,"hab1 hab2 hab3" "hab4 hab5 hab6" "hab7 hab8 hab9");
+}
+.habitacion1{
+    grid-area: hab1;
+}
+.habitacion2{
+    grid-area: hab2;
+}
+.habitacion3{
+    grid-area: hab3;
+}
+.habitacion4{
+    grid-area: hab4;
+}
+.habitacion5{
+    grid-area: hab5;
+}
+.habitacion6{
+    grid-area: hab6;
+}
+.habitacion7{
+    grid-area: hab7;
+}
+.habitacion8{
+    grid-area: hab8;
+}
+.habitacion9{
+    grid-area: hab9;
+}
+.cards-room{
+    height: 800px;
+    width: auto;
+    padding-bottom: .625rem;
+    overflow: hidden;
+    background-color: $b-g-cards;
+    border-bottom: solid black 0.02rem;
+    color: $texto-cards;
+    img{
+        height: 58%;
+        width: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    h3{
+        font-size: 1.25rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        padding-left: .625rem;
+        padding-top: .625rem;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+}
+.sub-cards{
+    gap: .625rem;
+    margin-top: 1rem;
+    padding-left: .625rem;
+    @include flex(column,none,none,none);
+    div{
+        gap: .625rem;
+        @include flex(row,none,none,none);
+        img{
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+.button-rooms{
+    @include flex(row,none,center,none);
+    gap: 1.25rem;
+    padding-top: .625rem;
+}
+.button{
+    height: 60px;
+    width: 45%;
+    background-color: $color-general;
+    color: white;
+    font-size: .9375rem;
+    font-weight: 600;
+    &:nth-child(2){
+        background-color: rgb(255, 255, 255);
+        color: black;}
+}

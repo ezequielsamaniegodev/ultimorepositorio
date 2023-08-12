@@ -1,0 +1,20 @@
+footer{
+    height: 15.625rem;
+    gap: 1.25rem;
+    background-color: $color-general;
+    color: white;
+    @include flex(column,none,center,center);
+    div{
+        h2{
+            font-size: 1.875rem;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+}
+.footer-text{
+    font-size: .9375rem;
+    font-family: 'Roboto', sans-serif;;
+}
+.footer-svg a{
+    margin: 0% .625rem;
+}

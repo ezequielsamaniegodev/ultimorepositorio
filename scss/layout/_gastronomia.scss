@@ -1,0 +1,86 @@
+.navegador-boostrap-restaurantes{
+    display: none;
+}
+.gastronomia-title{
+    width: 100%;
+    height: 15.625rem;
+    @include flex(row,none,center,center);
+    position: relative;
+    bottom: 100px;
+    div{
+        width: 70%;
+        gap: .625rem;
+        padding: .9375rem;
+        @include flex(column,none,center,center);
+        background-color: white;
+        box-shadow: 3px 3px 10px black;
+        h2{
+            font-family: 'Quicksand', sans-serif ;
+            font-size: 1.875rem;
+            color: $texto-cards;
+            font-weight: 900;
+        }
+        p{
+            font-family:'Roboto', sans-serif;
+        font-size: 1.25rem;
+        color:$texto-cards;
+        font-weight: 400;
+        }
+    }
+}
+.grids-gastronomia{
+    @include grid (repeat(2, 1fr),repeat(3, 1fr),center, center,"rest1 rest2" "rest3 rest4" "rest5 rest6");
+    padding: 0px 40px 60px 40px;
+    gap: 40px;
+}
+.restaurante1{
+    grid-area: rest1;
+}
+.restaurante2{
+    grid-area: rest2;
+}
+.restaurante3{
+    grid-area: rest3;
+}
+.restaurante4{
+    grid-area: rest4;
+}
+.restaurante5{
+    grid-area: rest5;
+}
+.restaurante6{
+    grid-area: rest6;
+}
+.cards-gastronomia{
+    height: 750px;
+    width: auto;
+    overflow: hidden;
+    background-color: $b-g-cards;
+    border-bottom: solid black 0.02rem;
+    color: $texto-cards;
+    img{
+        height: 70%;
+        width: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+    &:hover{
+        transform: scale(1.1);
+    }
+    }
+}
+.subcards-gastronomia{
+    @include flex(column,none,none,none);
+    gap:.625rem;
+    padding-top: .625rem;
+    padding-left: 1.25rem;
+    h3{
+        font-size: 1.25rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        padding-left: .3125rem;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+}

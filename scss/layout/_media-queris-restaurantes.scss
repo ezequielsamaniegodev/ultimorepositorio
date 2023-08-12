@@ -1,0 +1,40 @@
+@media (max-width:990px){
+    .grids-gastronomia{
+        @include grid (repeat(1, 1fr),repeat(6, 1fr),center, center,"rest1" "rest2" "rest3" "rest4" "rest5" "rest6");
+}
+}
+@media (max-width:768px){
+    .navegador{
+        display: none;
+    }
+    .navegador-boostrap-restaurantes{
+        display: block;
+        img{
+            width: 140px;
+            height: 50px;
+        }
+    }
+}
+@media (max-width:520px){
+    .cards-gastronomia{
+        height: 900px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        img:hover{
+            display: none;
+        }
+    }
+    .grids-gastronomia{
+        gap: 0rem;
+        padding: 0rem;
+    }
+    .gastronomia-title{
+        position: absolute;
+        p{
+            display: none;
+        }
+    }
+    .img-principal-gastronomia{
+        margin-bottom: 40px;
+    }
+}

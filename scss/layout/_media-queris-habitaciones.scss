@@ -1,0 +1,43 @@
+@media (max-width:1024px){
+    .grid-cards{
+        @include grid (repeat(2, 1fr),repeat(5, 1fr),none, none,"hab1 hab2" "hab3 hab4" "hab5 hab6" "hab7 hab8" "hab9 .");
+    }
+}
+@media (max-width:768px){
+    .navegador{
+        display: none;
+    }
+    .navegador-boostrap-habitaciones{
+        display: block;
+        img{
+            width: 140px;
+            height: 50px;
+        }
+    }
+    .grid-cards{
+        @include grid (repeat(1, 1fr),repeat(9, 1fr),none, none,"hab1" "hab2" "hab3" "hab4" "hab5" "hab6" "hab7" "hab8" "hab9");
+    }
+}
+@media (max-width:520px){
+    .cards-room{
+        height: 800px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        img:hover{
+            display: none;
+        }
+    }
+    .grid-cards{
+        gap: 0rem;
+        padding: 0rem;
+    }
+    .rooms-title{
+        position: absolute;
+        p{
+            display: none;
+        }
+    }
+    .img-principal-habitaciones{
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,38 @@
+.navegador-boostrap-index{
+    display: none;
+}
+.home {
+    background-image: url(../assets/img/nuevoindex.img.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div{
+        height: 90%;
+        width: 70%;
+        @include flex(column,nowrap,center,start);
+        gap: .625rem;
+        padding: 2.5rem;
+    }
+}
+.main-home{
+    div{
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke-color: black;
+        h1{
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 4.0625rem;
+            color: rgb(255, 255, 255);
+            text-shadow: 4px 4px black;
+        }
+        p{
+            font-family: 'Roboto', sans-serif; 
+            font-size: 1.875rem;
+            font-weight: 400;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px black;
+        }
+    }
+}

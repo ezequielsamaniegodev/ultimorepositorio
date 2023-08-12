@@ -1,0 +1,820 @@
+@charset "UTF-8";
+/**texto de titulos y cards**/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Quicksand&family=Roboto:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TIPOGRAFÍA */
+/* font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif; */
+.navegador {
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.navegador div img {
+  height: 1.875rem;
+  width: 6.25rem;
+}
+
+.nav-secciones ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: 1.25rem;
+  list-style-type: none;
+  padding: 1.25rem;
+}
+.nav-secciones ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+footer {
+  height: 15.625rem;
+  gap: 1.25rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+}
+footer div h2 {
+  font-size: 1.875rem;
+  font-family: "Playfair Display", serif;
+}
+
+.footer-text {
+  font-size: 0.9375rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-svg a {
+  margin: 0% 0.625rem;
+}
+
+.navegador-boostrap-index {
+  display: none;
+}
+
+.home {
+  background-image: url(../assets/img/nuevoindex.img.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home div {
+  height: 90%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 0.625rem;
+  padding: 2.5rem;
+}
+
+.main-home div {
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-color: black;
+}
+.main-home div h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 4.0625rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px black;
+}
+.main-home div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px black;
+}
+
+.navegador-boostrap-habitaciones {
+  display: none;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+.img-principal img {
+  width: 100%;
+  height: 80vh;
+}
+
+.rooms-title {
+  width: 100%;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+}
+.rooms-title div {
+  width: 70%;
+  gap: 0.625rem;
+  padding: 0.9375rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 3px 10px black;
+}
+.rooms-title div h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.875rem;
+  color: black;
+  font-weight: 900;
+}
+.rooms-title div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 400;
+}
+
+.grid-cards {
+  gap: 2.5rem;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: "hab1 hab2 hab3" "hab4 hab5 hab6" "hab7 hab8 hab9";
+}
+
+.habitacion1 {
+  grid-area: hab1;
+}
+
+.habitacion2 {
+  grid-area: hab2;
+}
+
+.habitacion3 {
+  grid-area: hab3;
+}
+
+.habitacion4 {
+  grid-area: hab4;
+}
+
+.habitacion5 {
+  grid-area: hab5;
+}
+
+.habitacion6 {
+  grid-area: hab6;
+}
+
+.habitacion7 {
+  grid-area: hab7;
+}
+
+.habitacion8 {
+  grid-area: hab8;
+}
+
+.habitacion9 {
+  grid-area: hab9;
+}
+
+.cards-room {
+  height: 800px;
+  width: auto;
+  padding-bottom: 0.625rem;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid black 0.02rem;
+  color: black;
+}
+.cards-room img {
+  height: 58%;
+  width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.cards-room img:hover {
+  transform: scale(1.1);
+}
+.cards-room h3 {
+  font-size: 1.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding-left: 0.625rem;
+  padding-top: 0.625rem;
+}
+.cards-room p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.sub-cards {
+  gap: 0.625rem;
+  margin-top: 1rem;
+  padding-left: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+}
+.sub-cards div {
+  gap: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+}
+.sub-cards div img {
+  height: 24px;
+  width: 24px;
+}
+
+.button-rooms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: 1.25rem;
+  padding-top: 0.625rem;
+}
+
+.button {
+  height: 60px;
+  width: 45%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.button:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.navegador-boostrap-restaurantes {
+  display: none;
+}
+
+.gastronomia-title {
+  width: 100%;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+}
+.gastronomia-title div {
+  width: 70%;
+  gap: 0.625rem;
+  padding: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 3px 10px black;
+}
+.gastronomia-title div h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.875rem;
+  color: black;
+  font-weight: 900;
+}
+.gastronomia-title div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 400;
+}
+
+.grids-gastronomia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "rest1 rest2" "rest3 rest4" "rest5 rest6";
+  padding: 0px 40px 60px 40px;
+  gap: 40px;
+}
+
+.restaurante1 {
+  grid-area: rest1;
+}
+
+.restaurante2 {
+  grid-area: rest2;
+}
+
+.restaurante3 {
+  grid-area: rest3;
+}
+
+.restaurante4 {
+  grid-area: rest4;
+}
+
+.restaurante5 {
+  grid-area: rest5;
+}
+
+.restaurante6 {
+  grid-area: rest6;
+}
+
+.cards-gastronomia {
+  height: 750px;
+  width: auto;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid black 0.02rem;
+  color: black;
+}
+.cards-gastronomia img {
+  height: 70%;
+  width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.cards-gastronomia img:hover {
+  transform: scale(1.1);
+}
+
+.subcards-gastronomia {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: 0.625rem;
+  padding-top: 0.625rem;
+  padding-left: 1.25rem;
+}
+.subcards-gastronomia h3 {
+  font-size: 1.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding-left: 0.3125rem;
+}
+.subcards-gastronomia p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.navegador-boostrap-actividades {
+  display: none;
+}
+
+.actividades-title {
+  width: 100%;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 100px;
+}
+.actividades-title div {
+  width: 70%;
+  gap: 0.625rem;
+  padding: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 3px 3px 10px black;
+}
+.actividades-title div h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.875rem;
+  color: black;
+  font-weight: 900;
+}
+.actividades-title div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 400;
+}
+
+.grids-actividades {
+  width: 100%;
+  gap: 2.5rem;
+  padding: 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "act1 act2 act3" "act4 act5 act6" "act7 act8 act9";
+}
+
+.actividad1 {
+  grid-area: act1;
+}
+
+.actividad2 {
+  grid-area: act2;
+}
+
+.actividad3 {
+  grid-area: act3;
+}
+
+.actividad4 {
+  grid-area: act4;
+}
+
+.actividad5 {
+  grid-area: act5;
+}
+
+.actividad6 {
+  grid-area: act6;
+}
+
+.actividad7 {
+  grid-area: act7;
+}
+
+.actividad8 {
+  grid-area: act8;
+}
+
+.actividad9 {
+  grid-area: act9;
+}
+
+.cards-actividades {
+  height: 700px;
+  width: auto;
+  padding-bottom: 0.625rem;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid rgb(0, 0, 0) 0.02rem;
+  margin-bottom: 50px;
+}
+.cards-actividades img {
+  height: 370px;
+  width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.cards-actividades img:hover {
+  transform: scale(1.1);
+}
+
+.subcards-actividades {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: 0.625rem;
+  padding-top: 1rem;
+  padding-left: 0.625rem;
+}
+.subcards-actividades h3 {
+  font-size: 1.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  padding-left: 0.625rem;
+  color: black;
+}
+.subcards-actividades p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+.div-button-act {
+  padding-left: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+.button-act {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  height: 50px;
+  width: 60%;
+}
+
+.navegador-boostrap-contacto {
+  display: none;
+}
+
+.map-2 {
+  display: none;
+}
+
+.body-contacto {
+  background-color: rgb(240, 240, 240);
+}
+
+.titulo-contacto {
+  display: grid;
+  place-items: center;
+  margin: 3.75rem 0rem;
+}
+.titulo-contacto div {
+  width: 40%;
+  border: 2px solid rgb(0, 0, 0);
+  gap: 0.625rem;
+  padding: 0.9375rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.titulo-contacto h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.875rem;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+
+.flex-contacto {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 6.25rem 0px;
+}
+
+.card-contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: 1.875rem;
+  padding: 1.875rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  height: 31.25rem;
+  width: 31.25rem;
+  border: 1px rgb(0, 0, 0) solid;
+  border-radius: 0.3125rem;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .grids-actividades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "act1 act2" "act3 act4" "act5 act6" "act7 act8" "act9 .";
+  }
+}
+@media (max-width: 768px) {
+  .navegador {
+    display: none;
+  }
+  .navegador-boostrap-actividades {
+    display: block;
+  }
+  .navegador-boostrap-actividades img {
+    width: 140px;
+    height: 50px;
+  }
+  .grids-actividades {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "act1" "act2" "act3" "act4" "act5" "act6" "act7" "act8" "act9";
+  }
+}
+@media (max-width: 520px) {
+  .cards-actividades {
+    height: 700px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .cards-actividades img:hover {
+    display: none;
+  }
+  .grids-actividades {
+    gap: 0rem;
+    padding: 0rem;
+  }
+  .actividades-title {
+    position: absolute;
+  }
+  .actividades-title p {
+    display: none;
+  }
+  .img-principal-actividades {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1090px) {
+  .map-2 {
+    display: block;
+  }
+  .map {
+    display: none;
+  }
+  .card-contacto {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media (max-width: 845px) {
+  .flex-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+  }
+}
+@media (max-width: 768px) {
+  .navegador {
+    display: none;
+  }
+  .navegador-boostrap-contacto {
+    display: block;
+  }
+  .navegador-boostrap-contacto img {
+    width: 140px;
+    height: 50px;
+  }
+}
+@media (max-width: 475px) {
+  .card-contacto {
+    width: 300px;
+    height: 550px;
+  }
+  .map-2 {
+    display: none;
+  }
+  .titulo-contacto div {
+    border: none;
+    background-color: rgb(240, 240, 240);
+  }
+}
+@media (max-width: 1024px) {
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "hab1 hab2" "hab3 hab4" "hab5 hab6" "hab7 hab8" "hab9 .";
+  }
+}
+@media (max-width: 768px) {
+  .navegador {
+    display: none;
+  }
+  .navegador-boostrap-habitaciones {
+    display: block;
+  }
+  .navegador-boostrap-habitaciones img {
+    width: 140px;
+    height: 50px;
+  }
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "hab1" "hab2" "hab3" "hab4" "hab5" "hab6" "hab7" "hab8" "hab9";
+  }
+}
+@media (max-width: 520px) {
+  .cards-room {
+    height: 800px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .cards-room img:hover {
+    display: none;
+  }
+  .grid-cards {
+    gap: 0rem;
+    padding: 0rem;
+  }
+  .rooms-title {
+    position: absolute;
+  }
+  .rooms-title p {
+    display: none;
+  }
+  .img-principal-habitaciones {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 990px) {
+  .grids-gastronomia {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "rest1" "rest2" "rest3" "rest4" "rest5" "rest6";
+  }
+}
+@media (max-width: 768px) {
+  .navegador {
+    display: none;
+  }
+  .navegador-boostrap-restaurantes {
+    display: block;
+  }
+  .navegador-boostrap-restaurantes img {
+    width: 140px;
+    height: 50px;
+  }
+}
+@media (max-width: 520px) {
+  .cards-gastronomia {
+    height: 900px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .cards-gastronomia img:hover {
+    display: none;
+  }
+  .grids-gastronomia {
+    gap: 0rem;
+    padding: 0rem;
+  }
+  .gastronomia-title {
+    position: absolute;
+  }
+  .gastronomia-title p {
+    display: none;
+  }
+  .img-principal-gastronomia {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .navegador-boostrap-index {
+    display: block;
+  }
+  .navegador-boostrap-index img {
+    width: 140px;
+    height: 50px;
+  }
+}
+@media (max-width: 620px) {
+  .main-home div p {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

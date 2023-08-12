@@ -1,0 +1,43 @@
+@media (max-width:1024px){
+    .grids-actividades{
+        @include grid (repeat(2, 1fr),repeat(5, 1fr),none, none,"act1 act2" "act3 act4" "act5 act6" "act7 act8" "act9 .");
+    }
+}
+@media (max-width:768px){
+    .navegador{
+        display: none;
+    }
+    .navegador-boostrap-actividades{
+        display: block;
+        img{
+            width: 140px;
+            height: 50px;
+        }
+    }
+    .grids-actividades{
+        @include grid (repeat(1, 1fr),repeat(9, 1fr),none, none,"act1" "act2" "act3" "act4" "act5" "act6" "act7" "act8" "act9");
+    }
+}
+@media (max-width:520px){
+    .cards-actividades{
+        height: 700px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        img:hover{
+            display: none;
+        }
+    }
+    .grids-actividades{
+        gap: 0rem;
+        padding: 0rem;
+    }
+    .actividades-title{
+        position: absolute;
+        p{
+            display: none;
+        }
+    }
+    .img-principal-actividades{
+        margin-bottom: 40px;
+    }
+}

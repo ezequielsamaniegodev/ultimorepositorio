@@ -1,0 +1,28 @@
+@import "./utilities/mixins";
+@import "./utilities/variables";
+@import "./base/reset";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Quicksand&family=Roboto:ital,wght@1,300&display=swap');
+/* TIPOGRAFÍA */
+/* font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@import "./layout/navegador";
+@import "./layout/footer";
+@import "./layout/index.html";
+@import "./layout/habitaciones";
+@import "./layout/gastronomia";
+@import "./layout/actividades";
+@import "./layout/contactos";
+@import "./layout/media-queris-actividades";
+@import "./layout/media-queris-contacto";
+@import "./layout/media-queris-habitaciones";
+@import "./layout/media-queris-restaurantes";
+@import "./layout/media-queris-index";
+
+
+
+
+
+
+
+

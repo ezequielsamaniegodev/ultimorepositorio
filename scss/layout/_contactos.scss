@@ -1,0 +1,48 @@
+.navegador-boostrap-contacto{
+    display: none;
+}
+.map-2{
+    display: none;
+}
+.body-contacto{
+    background-color: rgb(240, 240, 240);
+}
+.titulo-contacto{
+    display: grid;
+    place-items: center;
+    margin: 3.75rem 0rem;
+    div {
+        width: 40%;
+        border: 2px solid rgb(0, 0, 0);
+        gap: .625rem;
+        padding: .9375rem;
+        @include flex(row,none,center,center);
+        background-color: white;
+    }
+    h2{
+        font-family: 'Quicksand', sans-serif ;
+        font-size: 1.875rem;
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+    }
+}
+.flex-contacto{
+    @include flex(row-reverse,none,space-evenly,center);
+    margin: 6.25rem 0px;
+}
+.card-contacto{
+    @include flex(column,none,center,none);
+    gap: 1.875rem;
+    padding: 1.875rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 31.25rem;
+    width: 31.25rem;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: .3125rem;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+}
+
+
